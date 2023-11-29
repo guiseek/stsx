@@ -1,0 +1,24 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <g id="polygon">
+    <path d="M23.9282 220L127.851 40L231.774 220H23.9282Z" stroke="black" stroke-width="8"></path><text id="0"
+      fill="black" xml:space="preserve" style="white-space: pre" font-family="'Segoe UI'" font-size="16"
+      letter-spacing="0em">
+      <tspan x="12" y="239.318">0</tspan>
+    </text><text id="0_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="'Segoe UI'" font-size="16"
+      letter-spacing="0em">
+      <tspan x="234" y="239.318">0</tspan>
+    </text><text id="0_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="'Segoe UI'" font-size="16"
+      letter-spacing="0em">
+      <tspan x="123" y="25.3182">0</tspan>
+    </text><text id="0_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="'Segoe UI'" font-size="16"
+      letter-spacing="0em">
+      <tspan x="123" y="239.318">0</tspan>
+    </text><text id="0_5" fill="black" xml:space="preserve" style="white-space: pre" font-family="'Segoe UI'" font-size="16"
+      letter-spacing="0em">
+      <tspan x="55" y="133.318">0</tspan>
+    </text><text id="0_6" fill="black" xml:space="preserve" style="white-space: pre" font-family="'Segoe UI'" font-size="16"
+      letter-spacing="0em">
+      <tspan x="189" y="133.318">0</tspan>
+    </text>
+  </g>
+</svg>
