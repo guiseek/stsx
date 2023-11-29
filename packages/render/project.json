@@ -6,19 +6,27 @@
   "targets": {
     "build": {
       "executor": "@nx/esbuild:esbuild",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/packages/render",
         "main": "packages/render/src/index.ts",
         "tsConfig": "packages/render/tsconfig.lib.json",
-        "assets": ["packages/render/*.md"],
+        "assets": [
+          "packages/render/*.md"
+        ],
         "generatePackageJson": true,
-        "format": ["cjs"]
+        "format": [
+          "cjs"
+        ]
       }
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "packages/render/**/*.ts",
@@ -28,13 +36,22 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "packages/render/jest.config.ts"
       }
     },
     "semantic-release": {
-      "executor": "@theunderscorer/nx-semantic-release:semantic-release"
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "branches": ["main"],
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "render-v${VERSION}"
+      }
     }
   },
   "tags": []
