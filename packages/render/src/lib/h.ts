@@ -1,5 +1,5 @@
-type Fn = (...params: any[]) => Element;
-type Ctor = new (...params: any[]) => Element;
+type Fn = (...params: unknown[]) => Element;
+type Ctor = new (...params: unknown[]) => Element;
 
 export function h(tagFn: string | Fn | Ctor, props: object, ...nodes: Node[]) {
   const component = create(tagFn, props);
@@ -11,7 +11,6 @@ export function h(tagFn: string | Fn | Ctor, props: object, ...nodes: Node[]) {
   }
 
   return component;
-  // return Object.assign(component, props);
 }
 
 function add(node: Node | string) {
@@ -23,7 +22,6 @@ function create(tagFn: string | Fn | Ctor, props: object): Element {
     return tagFn === 'svg'
       ? document.createElementNS('http://www.w3.org/2000/svg', tagFn)
       : document.createElementNS('http://www.w3.org/1999/xhtml', tagFn);
-    // return document.createElement(tagFn);
   }
 
   try {
