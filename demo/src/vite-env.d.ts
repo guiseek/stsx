@@ -1,9 +1,8 @@
 /// <reference types="vite/client" />
 
-declare const main: HTMLDivElement
-declare const Fragment = DocumentFragment
-declare const h: Function
-
+declare const main: HTMLDivElement;
+declare const Fragment = DocumentFragment;
+declare const h: Function;
 
 declare namespace JSX {
   interface SVGElement {

@@ -17,9 +17,9 @@ export default defineConfig({
   },
 
   plugins: [nxViteTsPaths()],
-  assetsInclude: ["./src/assets/**/*"],
+  assetsInclude: ['./src/assets/**/*'],
   esbuild: {
-    jsxInject: `import { h, Fragment } from '@stsx/render'`
+    jsxInject: `import { h, Fragment } from '@stsx/render'`,
   },
 
   // Uncomment this if you are using workers.

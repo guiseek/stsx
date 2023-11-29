@@ -7,7 +7,7 @@ export function h(tagFn: string | Fn | Ctor, props: object, ...nodes: Node[]) {
   component.append(...nodes.flatMap(add));
 
   for (const [prop, value] of Object.entries(props ?? {})) {
-    component.setAttribute(prop, value)
+    component.setAttribute(prop, value);
   }
 
   return component;

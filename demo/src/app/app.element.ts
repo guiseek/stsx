@@ -3,7 +3,6 @@ import { app } from './app.template';
 
 console.log(app());
 
-
 @custom('app-root')
 export class AppElement extends HTMLElement {
   public static observedAttributes = [];
